@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historical Reports - RVFix</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e3b4e;
+      color: white;
+      padding: 20px;
+    }
+    .subscription-status {
+      display: flex;
+      align-items: center;
+    }
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .status-dot.green {
+      background-color: green;
+    }
+    nav {
+      background-color: #4a5a72;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    a.report-link {
+      color: #2e3b4e;
+      text-decoration: none;
+    }
+    a.report-link:hover {
+      text-decoration: underline;
+    }
+    .tech-profile {
+      display: flex;
+      align-items: center;
+    }
+    .tech-profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Historical Reports</h1>
+    <div class="subscription-status">
+      <div class="status-dot green"></div>
+      <span>Active</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="Welcome Page.html">Home</a>
+	<a href="Subscription Page.html">Subscription Details</a>
+	<a href="Historical Reports.html">Historical Reports</a>
+	<a href="Schedule Diagnostic.html">Schedule Diagnostic</a>
+	<a href="My RV.html">My RV</a>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Past RVFix Technician Calls</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Technician</th>
+            <th>Issue Summary</th>
+            <th>Report</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>March 12, 2025</td>
+            <td class="tech-profile">
+              <img src="https://via.placeholder.com/40" alt="Mike Hanson">
+              Mike Hanson
+            </td>
+            <td>Electrical panel failure</td>
+            <td><a href="#" class="report-link">View PDF</a></td>
+          </tr>
+          <tr>
+            <td>January 5, 2025</td>
+            <td class="tech-profile">
+              <img src="https://via.placeholder.com/40" alt="Sarah Lynn">
+              Sarah Lynn
+            </td>
+            <td>Water pump leaking</td>
+            <td><a href="#" class="report-link">View PDF</a></td>
+          </tr>
+          <tr>
+            <td>October 22, 2024</td>
+            <td class="tech-profile">
+              <img src="https://via.placeholder.com/40" alt="James Carter">
+              James Carter
+            </td>
+            <td>AC unit not cooling</td>
+            <td><a href="#" class="report-link">View PDF</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

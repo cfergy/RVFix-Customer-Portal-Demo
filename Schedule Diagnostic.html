@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Diagnostic - RVFix</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e3b4e;
+      color: white;
+      padding: 20px;
+    }
+    .subscription-status {
+      display: flex;
+      align-items: center;
+    }
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .status-dot.green {
+      background-color: green;
+    }
+    nav {
+      background-color: #4a5a72;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #2e3b4e;
+      color: white;
+      margin-top: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #1c2735;
+    }
+    .calendar-placeholder {
+      background-color: #e6eaf0;
+      height: 400px;
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      color: #555;
+      border-radius: 8px;
+    }
+    .disclaimer {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #b00000;
+      font-weight: bold;
+    }
+    .disclaimer a {
+      color: #b00000;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Schedule Diagnostic</h1>
+    <div class="subscription-status">
+      <div class="status-dot green"></div>
+      <span>Active</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="Welcome Page.html">Home</a>
+	<a href="Subscription Page.html">Subscription Details</a>
+	<a href="Historical Reports.html">Historical Reports</a>
+	<a href="Schedule Diagnostic.html">Schedule Diagnostic</a>
+	<a href="My RV.html">My RV</a>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Book a Technician Call</h2>
+      <p><strong>Hours of Operation:</strong> Monday through Friday, 8:00 AM – 6:00 PM MDT</p>
+
+      <form>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="issue">Describe the Issue</label>
+        <textarea id="issue" name="issue" rows="4" required></textarea>
+
+        <button type="submit">Submit Request</button>
+      </form>
+
+      <div class="calendar-placeholder">
+        [ Calendar View Placeholder ]
+      </div>
+
+      <p class="disclaimer">For immediate assistance, please call our RV emergency line at <a href="tel:+18005551234">1-800-555-1234</a>.</p>
+    </div>
+  </main>
+</body>
+</html>

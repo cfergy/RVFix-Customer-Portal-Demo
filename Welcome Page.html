@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RVFix Customer Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e3b4e;
+      color: white;
+      padding: 20px;
+    }
+    .subscription-status {
+      display: flex;
+      align-items: center;
+    }
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .status-dot.green {
+      background-color: green;
+    }
+    .status-dot.red {
+      background-color: red;
+    }
+    nav {
+      background-color: #4a5a72;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome, John Doe!</h1>
+    <div class="subscription-status">
+      <div class="status-dot green"></div>
+      <span>Subscription Active</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="Welcome Page.html">Home</a>
+	<a href="Subscription Page.html">Subscription Details</a>
+	<a href="Historical Reports.html">Historical Reports</a>
+	<a href="Schedule Diagnostic.html">Schedule Diagnostic</a>
+	<a href="My RV.html">My RV</a>
+  </nav>
+
+  <main>
+    <div id="subscription" class="card">
+      <h2>Subscription Details</h2>
+      <p>View and manage your RVFix subscription here.</p>
+    </div>
+
+    <div id="payments" class="card">
+      <h2>Payment Information</h2>
+      <p>Update your billing info and view transaction history.</p>
+    </div>
+
+    <div id="history" class="card">
+      <h2>Historical Reports</h2>
+      <p>Access reports from your past RVFix technician calls.</p>
+    </div>
+
+    <div id="schedule" class="card">
+      <h2>Schedule a Diagnostic</h2>
+      <p>Select a date and time to schedule your next tech call.</p>
+    </div>
+  </main>
+</body>
+</html>

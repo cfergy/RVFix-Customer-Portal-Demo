@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My RV - RVFix</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2e3b4e;
+      color: white;
+      padding: 20px;
+    }
+    .subscription-status {
+      display: flex;
+      align-items: center;
+    }
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .status-dot.green {
+      background-color: green;
+    }
+    nav {
+      background-color: #4a5a72;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 40px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      max-width: 900px;
+    }
+    .faq-item {
+      margin-bottom: 20px;
+    }
+    .faq-item h4 {
+      margin: 0 0 5px;
+      color: #2e3b4e;
+    }
+    .faq-item p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My RV</h1>
+    <div class="subscription-status">
+      <div class="status-dot green"></div>
+      <span>Active</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="Welcome Page.html">Home</a>
+	<a href="Subscription Page.html">Subscription Details</a>
+	<a href="Historical Reports.html">Historical Reports</a>
+	<a href="Schedule Diagnostic.html">Schedule Diagnostic</a>
+	<a href="My RV.html">My RV</a>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h2>Registered RV Information</h2>
+      <p><strong>Model:</strong> 2022 Winnebago View 24D</p>
+      <p><strong>VIN:</strong> 1GB4YXEY3MF123456</p>
+      <p><strong>Warranty:</strong> Valid through August 2025</p>
+    </div>
+
+    <div class="card">
+      <h2>Helpful User Guides & Resources</h2>
+      <ul>
+        <li><a href="#">Download Owner's Manual (PDF)</a></li>
+        <li><a href="#">Winterizing Your RV</a></li>
+        <li><a href="#">Spring Startup Checklist</a></li>
+        <li><a href="#">Using Your Slide-Out Safely</a></li>
+        <li><a href="#">Managing RV Electrical Systems</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h4>How do I reset the circuit breaker?</h4>
+        <p>Locate the main breaker panel and toggle the affected breaker off and then on again.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What should I do if my slide-out is stuck?</h4>
+        <p>Ensure your battery is fully charged and check for obstructions. Contact support if the issue persists.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How can I sanitize my water system?</h4>
+        <p>Flush the system with a solution of bleach and water, let sit for 12 hours, then flush thoroughly with clean water.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
